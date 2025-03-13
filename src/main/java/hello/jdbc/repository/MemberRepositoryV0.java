@@ -7,6 +7,8 @@ import org.springframework.context.i18n.LocaleContextHolder;
 
 import java.net.URL;
 import java.sql.*;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.NoSuchElementException;
 
 /**
@@ -132,6 +134,16 @@ public class MemberRepositoryV0 {
         } finally {
             close(con, pstmt, null);
         }
+    }
+
+    public void makeCode() {
+        Map<String, String> userMap = new HashMap<>();
+        userMap.put("userAlice1", "asd");
+        userMap.put("userAlice2", "asd");
+        userMap.put("userAlice3", "asd");
+
+        log.info(userMap.get("userAlice1"));
+
     }
 
 
