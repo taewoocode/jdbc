@@ -10,6 +10,7 @@ import static hello.jdbc.connection.ConnectionConst.*;
 import static hello.jdbc.connection.ConnectionConst.PASSWORD;
 import static hello.jdbc.connection.ConnectionConst.USERNAME;
 
+
 @Slf4j
 public class DBConnectionUtil {
 
@@ -25,5 +26,13 @@ public class DBConnectionUtil {
              */
             throw new IllegalStateException(e);
         }
+    }
+
+    public static int hello() {
+        return 10;
+    }
+
+    public static int add(int a, int b) {
+        return a + b;
     }
 }
