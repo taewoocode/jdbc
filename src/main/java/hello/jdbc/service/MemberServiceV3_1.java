@@ -14,6 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 @RequiredArgsConstructor
 @Slf4j
 public class MemberServiceV3_1 {
+
 	private final PlatformTransactionManager transactionManager;
 	private final MemberRepositoryV3 memberRepository;
 
